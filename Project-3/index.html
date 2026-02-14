@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DevDiary - Learn. Break. Fix. Repeat.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">DevDiary</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <!-- FIXED INTEREST LINK -->
+        <li class="nav-item">
+          <a class="nav-link active" href="interests.html">Interests</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+  
+
+<!--  Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Login to DevDiary</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sign up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupModalLabel">Get an DevDiary account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+   <div class="mb-3">
+    <label for="cexampleInputPassword1" class="form-label"> Confirm Password</label>
+    <input type="password" class="form-control" id="cexampleInputPassword1">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Create Account</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <div class="carousel-inner bg-body-secondary">
+        <div class="carousel-item active">
+          <img
+            src="tech_image3.avif"
+            style="height: 50vh; object-fit: contain"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to DevDiary</h5>
+            <p>Tech , Development and Trends</p>
+            <button class="btn btn-outline-info btn-sm">Technology</button>
+            <button class="btn btn-outline-light btn-sm">
+              Web Development
+            </button>
+            <button class="btn btn-outline-info btn-sm">Tech Fun</button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="tech_image4.avif"
+            style="height: 50vh; object-fit: contain"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to DevDiary</h5>
+            <p>Tech , Development and Trends</p>
+            <button class="btn btn-outline-info btn-sm">Technology</button>
+            <button class="btn btn-outline-light btn-sm">
+              Web Development
+            </button>
+            <button class="btn btn-outline-info btn-sm">Tech Fun</button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="tech_image5.avif"
+            style="height: 50vh; object-fit: contain"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to DevDiary</h5>
+            <p>Tech , Development and Trends</p>
+            <button class="btn btn-outline-info btn-sm">Technology</button>
+            <button class="btn btn-outline-light btn-sm">
+              Web Development
+            </button>
+            <button class="btn btn-outline-info btn-sm">Tech Fun</button>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container">
+     <div class="row mb-2">
+
+
+
+  <!-- FIRST CARD -->
+  <div class="col-md-6 my-4">
+   <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary-emphasis">Web Development</strong>
+        <h3 class="mb-0">Modern Frontend Trends</h3>
+        <div class="mb-1 text-body-secondary">Jan 18</div>
+        <p class="card-text mb-auto">Explore the latest trends in frontend development — from responsive UI design
+to performance-focused JavaScript frameworks shaping modern web experiences.</p>
+      </div>
+
+      <div class="col-auto d-none d-lg-block">
+        <img src="th1.avif"class="bd-placeholder-img"
+          height="250"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="200" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- SECOND CARD -->
+  <div class="col-md-6 my-4">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary-emphasis">Technology</strong>
+        <h3 class="mb-0">AI & Future Interfaces</h3>
+        <div class="mb-1 text-body-secondary">Feb 02</div>
+        <p class="card-text mb-auto">Discover how artificial intelligence and immersive interfaces like AR and VR
+are redefining how we interact with digital products and services.</p>
+      </div>
+
+      <div class="col-auto d-none d-lg-block">
+        <img src="th2.avif"class="bd-placeholder-img"
+          height="250"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="200" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- THIRD CARD -->
+  <div class="col-md-6 my-4">
+   <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary-emphasis">Cybersecurity </strong>
+        <h3 class="mb-0">Staying Safe in a Digital World</h3>
+        <div class="mb-1 text-body-secondary">Mar 10</div>
+        <p class="card-text mb-auto">Learn the basics of digital security — from protecting personal data to
+understanding how modern systems defend against cyber threats and vulnerabilities.</p>
+      </div>
+
+      <div class="col-auto d-none d-lg-block">
+        <img src="tech_image3.avif"class="bd-placeholder-img"
+          height="250"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="200" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- FOURTH CARD -->
+  <div class="col-md-6 my-4">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row shadow-sm h-md-250 position-relative">
+
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary-emphasis">Innovation</strong>
+        <h3 class="mb-0">The Rise of Smart Automation</h3>
+        <div class="mb-1 text-body-secondary">Apr 02</div>
+        <p class="card-text mb-auto">Automation tools powered by AI are transforming how developers work,
+helping teams build faster while focusing on creativity and problem-solving.</p>
+      </div>
+
+      <div class="col-auto d-none d-lg-block">
+        <img src="tech_image2.avif"class="bd-placeholder-img"
+          height="250"
+          preserveAspectRatio="xMidYMid slice"
+          role="img"
+          width="200" alt="">
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>
+        © 2026–2027 DevDiary, Inc. · <a href="#">Privacy</a> ·
+        <a href="#">Terms</a>
+      </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
